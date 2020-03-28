@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Hojas de vida</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Datos basicos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ConsDatFis">Datos fisicos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Rendimientos</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+    <form (submit)="consultar()">
+      <div class="form-group">
+  
+        <p><strong>Buscar jugador</strong>
+        </p>
+      </div>
+      <div class="form-group">
+        <label>IdJugador:</label>
+        <input class="form-control" type="number" name="idJugador" placeholder="idJugador" [(ngModel)]="idJugador">
+      </div>
+      <input class="btn btn-primary" type="submit" name="accion" value="Buscar"/>
+    </form>
+  </div>
